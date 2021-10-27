@@ -89,7 +89,7 @@ try:
     elements = driver.find_elements_by_xpath("//*[@class='_1mf _1mj']")
     if len(elements) == 0:
         logFile.write("\n" + datetime.now().strftime("%d/%m/%Y %H:%M:%S") + "[INFO]: There are no birthdays today!")
-        #driver.close()
+        driver.close()
     # send birthday wishes
     else:
         list_of_wishes = ["Happy Birthday! Have a great one, enjoy!", "Happy birthday, wishing you and your family good health, happiness and prosperity. Have a good one. Enjoy.", "Happy birthday, wishing you a wonderful year ahead filled with new experience. Enjoy the day.", "Happy birthday, always wishing the best for you, have a good one."]
